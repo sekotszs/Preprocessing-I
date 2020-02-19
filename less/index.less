@@ -50,10 +50,102 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
 	height: 100%;
 }
 
+body{
+	margin: 5% 10%;
+	border: red solid 5px;
+	background-color: green;
+}
+
+
+/*HEADER*/
+
+header{
+	margin: 20px 0;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.7rem;
+
+	nav{
+		margin-right: 62px;	
+	} //nav ends here
+
+	a{
+		text-decoration: none;
+		margin-left: 50px
+	}//nav a ends here
+}//header ends here
+
+
+/*SECTION TOP CONTENT*/
+
+.topcontent{
+	background-color: hotpink;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	padding: 2.5% 5%;
+
+	.myname{
+		background-color: lightblue;
+		width: 150%;
+		margin: 10%;
+		text-align: center;
+	}//myname ends here
+
+	.picture{
+		border: 7px yellow solid
+	}//picture ends here
+
+	img{
+		width:400px
+	}//img ends here
+
+	h1{
+		font-size: 7rem;
+
+	}//h1 ends here
+
+	p{
+		font-size: 3rem;
+	}
+
+}//topcontent ends here
+
+
+/*SECTION ABOUT ME*/
+
+.aboutme{
+	background-color: lightblue;
+	justify-content: space-around;
+	padding: 10px 100px;
+
+	.info{
+		background-color: yellow;
+		padding: 1% 50px;
+		text-align: center;
+		border:red 2px solid;
+		margin:50px 50px;
+	
+
+	}//info ends here
+
+	h2{
+		font-size: 3rem;
+	}//h2 ends here
+
+	p{
+	font-size:1.5rem;
+	border: fuchsia 5px solid;
+	width: 500x;
+	}//p ends here
+
+}//aboutme ends here

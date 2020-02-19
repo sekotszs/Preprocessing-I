@@ -134,3 +134,70 @@ html,
 body {
   height: 100%;
 }
+body {
+  margin: 5% 10%;
+  border: red solid 5px;
+  background-color: green;
+}
+/*HEADER*/
+header {
+  margin: 20px 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+}
+header nav {
+  margin-right: 62px;
+}
+header a {
+  text-decoration: none;
+  margin-left: 50px;
+}
+/*SECTION TOP CONTENT*/
+.topcontent {
+  background-color: hotpink;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 2.5% 5%;
+}
+.topcontent .myname {
+  background-color: lightblue;
+  width: 150%;
+  margin: 10%;
+  text-align: center;
+}
+.topcontent .picture {
+  border: 7px yellow solid;
+}
+.topcontent img {
+  width: 400px;
+}
+.topcontent h1 {
+  font-size: 7rem;
+}
+.topcontent p {
+  font-size: 3rem;
+}
+/*SECTION ABOUT ME*/
+.aboutme {
+  background-color: lightblue;
+  justify-content: space-around;
+  padding: 10px 100px;
+}
+.aboutme .info {
+  background-color: yellow;
+  padding: 1% 50px;
+  text-align: center;
+  border: red 2px solid;
+  margin: 50px 50px;
+}
+.aboutme h2 {
+  font-size: 3rem;
+}
+.aboutme p {
+  font-size: 1.5rem;
+  border: fuchsia 5px solid;
+  width: 500x;
+}
