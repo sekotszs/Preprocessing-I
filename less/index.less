@@ -60,8 +60,8 @@ html, body {
 
 body{
 	margin: 5% 10%;
-	border: red solid 5px;
-	background-color: green;
+	background-color: pink;
+	
 }
 
 
@@ -73,14 +73,20 @@ header{
 	display: flex;
 	justify-content: flex-end;
 	font-size: 1.7rem;
+	background-image:url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
 
 	nav{
 		margin-right: 62px;	
+
 	} //nav ends here
 
 	a{
 		text-decoration: none;
-		margin-left: 50px
+		margin-left: 50px;
+		background-color: pink;
+		padding: 10px;
+		border-radius: 10px;
+		border:5PX
 	}//nav a ends here
 }//header ends here
 
@@ -88,7 +94,7 @@ header{
 /*SECTION TOP CONTENT*/
 
 .topcontent{
-	background-color: hotpink;
+	background-image:url('https://images.unsplash.com/photo-1581985430116-d8fba25256b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
@@ -143,9 +149,36 @@ header{
 	}//h2 ends here
 
 	p{
-	font-size:1.5rem;
+	font-size:1.6rem;
 	border: fuchsia 5px solid;
 	width: 500x;
+	padding: 15px;
 	}//p ends here
 
 }//aboutme ends here
+
+/*FOOTER*/
+
+footer{
+	background-color: palevioletred;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 100px;
+
+	h2{
+		font-size: 3rem;
+		text-align: center;
+		padding-bottom: 25px;
+	}//h2 ends here
+
+	nav{
+		padding-top: 25px;
+	}
+
+	a{
+		font-size: 1.5rem;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 20px;
+	}//a ends here
+}//footer ends here
