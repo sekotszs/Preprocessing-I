@@ -1,4 +1,4 @@
-// Is this working?
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,10 +50,247 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+body{
+	margin: 5% 10%;
+	background-color:white;
+
+	@media(max-width: 500px){
+		background-color: green;
+	}
+	
+}
+@import url('https://fonts.googleapis.com/css?family=Lobster|Source+Serif+Pro&display=swap');
+//variables
+@main-color:#FFB6C1;
+@accent-color:#DCDCDC;
+@heading-font:'Lobster', cursive;
+@main-font:'Source Serif Pro', serif;
+@text-color:#DB7093;
+
+//MIXINS
+.fontsize1(){
+	font-size: 1.7rem;
+}
+.fontsize2(){
+	font-size: 1.5rem;
+}
+
+
+
+/*HEADER*/
+
+header{
+	margin: 20px 0;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.7rem;
+	background-image:url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	font-family: @main-font;
+
+
+
+	nav{
+		margin-right: 62px;	
+	
+
+	} //nav ends here
+
+	a{
+		text-decoration: none;
+		margin-left: 50px;
+		background-color: @main-color;
+		border: @accent-color 5px dotted;
+		padding: 10px;
+		border-radius: 10px;
+		color: @text-color;
+
+		@media(max-width:500px){
+		justify-content: center;
+		display: flex;
+		margin-top: 5px;
+		}
+		
+	}//nav a ends here
+	
+
+}//header ends here
+
+
+/*SECTION TOP CONTENT*/
+
+.topcontent{
+	background-image:url('https://images.unsplash.com/photo-1581985430116-d8fba25256b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	padding: 2.5% 5%;
+	font-family: @heading-font;
+	color: @text-color;
+
+	@media(max-width:500px){
+		justify-content: center;
+		display: flex;
+		}
+
+	.myname{
+		background-color:@main-color;
+		border: @accent-color 15px dotted;
+		border-radius: 20px;
+		width: 150%;
+		margin: 10%;
+		text-align: center;
+
+		@media(max-width:500px){
+			justify-content: space-around;
+			display: flex;
+			
+			}
+
+
+	}//myname ends here
+	 .picture{
+		@media(max-width:500px){
+			display: none;
+			}
+	 }
+
+	img{
+		width:400px
+
+
+	}//img ends here
+
+	h1{
+		font-size: 7rem;
+
+		@media(max-width:500px){
+			justify-content: center;
+			display: flex;
+			font-size: 4rem;
+			}
+
+	}//h1 ends here
+
+	p{
+		font-size: 3rem;
+
+		@media(max-width:500px){
+			justify-content: center;
+			display: flex;
+			font-size: 1.5rem;
+			}
+
+	}
+
+
+}//topcontent ends here
+
+
+/*SECTION ABOUT ME*/
+
+.aboutme{
+	background-color:@main-color;
+	justify-content: space-around;
+	padding: 10px 100px;
+
+	@media(max-width:500px){
+		justify-content: center;
+		display: flex;
+		font-size: 4rem;
+		}
+
+
+
+	.info{
+		background-color:@accent-color;
+		padding: 1% 50px;
+		text-align: center;
+		border:@text-color 15px dotted;
+		margin:50px 50px;
+		color: @text-color;
+
+		
+	
+
+	}//info ends here
+
+	h2{
+		font-size: 3rem;
+		font-family: @heading-font;
+	}//h2 ends here
+
+	p{
+		.fontsize2();
+	border-top:@text-color 5px solid;
+	width: 500x;
+	padding: 15px;
+	font-family: @main-font;
+	padding-top:15px; 
+
+	@media(max-width:500px){
+		justify-content: center;
+		display: flex;
+		font-size: 4rem;
+		}
+
+	}//p ends here
+
+}//aboutme ends here
+
+/*FOOTER*/
+
+footer{
+	background-color: @main-color;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 100px;
+	font-family: @main-font;
+	color: @text-color;
+	background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+	
+	@media(max-width:500px){
+		justify-content: center;
+		display: flex;
+		font-size: 4rem;
+		}
+
+	h2{
+		font-size: 3rem;
+		text-align: center;
+		padding-bottom: 25px;
+		font-family: @heading-font;
+		background-color: @accent-color;
+		padding-top:20px ;
+		
+	}//h2 ends here
+
+	nav{
+		padding-top: 25px;
+		background-color: @accent-color;
+		padding-bottom: 20px;
+		
+		
+	}
+
+	a{
+		.fontsize2();
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 20px;
+		color: @text-color;
+		text-decoration: none;
+		
+		
+	}//a ends here
+
+
+}//footer ends here

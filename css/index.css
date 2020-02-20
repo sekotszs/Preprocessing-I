@@ -1,1 +1,324 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 5% 10%;
+  background-color: white;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: green;
+  }
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-pQ.ttf) format('truetype');
+}
+/*HEADER*/
+header {
+  margin: 20px 0;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+  background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  font-family: 'Source Serif Pro', serif;
+}
+header nav {
+  margin-right: 62px;
+}
+header a {
+  text-decoration: none;
+  margin-left: 50px;
+  background-color: #FFB6C1;
+  border: #DCDCDC 5px dotted;
+  padding: 10px;
+  border-radius: 10px;
+  color: #DB7093;
+}
+@media (max-width: 500px) {
+  header a {
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+  }
+}
+/*SECTION TOP CONTENT*/
+.topcontent {
+  background-image: url('https://images.unsplash.com/photo-1581985430116-d8fba25256b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 2.5% 5%;
+  font-family: 'Lobster', cursive;
+  color: #DB7093;
+}
+@media (max-width: 500px) {
+  .topcontent {
+    justify-content: center;
+    display: flex;
+  }
+}
+.topcontent .myname {
+  background-color: #FFB6C1;
+  border: #DCDCDC 15px dotted;
+  border-radius: 20px;
+  width: 150%;
+  margin: 10%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .topcontent .myname {
+    justify-content: space-around;
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  .topcontent .picture {
+    display: none;
+  }
+}
+.topcontent img {
+  width: 400px;
+}
+.topcontent h1 {
+  font-size: 7rem;
+}
+@media (max-width: 500px) {
+  .topcontent h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
+.topcontent p {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .topcontent p {
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+  }
+}
+/*SECTION ABOUT ME*/
+.aboutme {
+  background-color: #FFB6C1;
+  justify-content: space-around;
+  padding: 10px 100px;
+}
+@media (max-width: 500px) {
+  .aboutme {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
+.aboutme .info {
+  background-color: #DCDCDC;
+  padding: 1% 50px;
+  text-align: center;
+  border: #DB7093 15px dotted;
+  margin: 50px 50px;
+  color: #DB7093;
+}
+.aboutme h2 {
+  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+}
+.aboutme p {
+  font-size: 1.5rem;
+  border-top: #DB7093 5px solid;
+  width: 500x;
+  padding: 15px;
+  font-family: 'Source Serif Pro', serif;
+  padding-top: 15px;
+}
+@media (max-width: 500px) {
+  .aboutme p {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
+/*FOOTER*/
+footer {
+  background-color: #FFB6C1;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 100px;
+  font-family: 'Source Serif Pro', serif;
+  color: #DB7093;
+  background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+@media (max-width: 500px) {
+  footer {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
+footer h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 25px;
+  font-family: 'Lobster', cursive;
+  background-color: #DCDCDC;
+  padding-top: 20px ;
+}
+footer nav {
+  padding-top: 25px;
+  background-color: #DCDCDC;
+  padding-bottom: 20px;
+}
+footer a {
+  font-size: 1.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  color: #DB7093;
+  text-decoration: none;
+}
