@@ -138,6 +138,11 @@ body {
   margin: 5% 10%;
   background-color: white;
 }
+@media (max-width: 500px) {
+  body {
+    background-color: green;
+  }
+}
 @font-face {
   font-family: 'Lobster';
   font-style: normal;
@@ -174,6 +179,13 @@ header a {
   border-radius: 10px;
   color: #DB7093;
 }
+@media (max-width: 500px) {
+  header a {
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+  }
+}
 /*SECTION TOP CONTENT*/
 .topcontent {
   background-image: url('https://images.unsplash.com/photo-1581985430116-d8fba25256b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
@@ -184,6 +196,12 @@ header a {
   font-family: 'Lobster', cursive;
   color: #DB7093;
 }
+@media (max-width: 500px) {
+  .topcontent {
+    justify-content: center;
+    display: flex;
+  }
+}
 .topcontent .myname {
   background-color: #FFB6C1;
   border: #DCDCDC 15px dotted;
@@ -192,20 +210,52 @@ header a {
   margin: 10%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .topcontent .myname {
+    justify-content: space-around;
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  .topcontent .picture {
+    display: none;
+  }
+}
 .topcontent img {
   width: 400px;
 }
 .topcontent h1 {
   font-size: 7rem;
 }
+@media (max-width: 500px) {
+  .topcontent h1 {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
 .topcontent p {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .topcontent p {
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+  }
 }
 /*SECTION ABOUT ME*/
 .aboutme {
   background-color: #FFB6C1;
   justify-content: space-around;
   padding: 10px 100px;
+}
+@media (max-width: 500px) {
+  .aboutme {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
 }
 .aboutme .info {
   background-color: #DCDCDC;
@@ -227,6 +277,13 @@ header a {
   font-family: 'Source Serif Pro', serif;
   padding-top: 15px;
 }
+@media (max-width: 500px) {
+  .aboutme p {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
+}
 /*FOOTER*/
 footer {
   background-color: #FFB6C1;
@@ -236,6 +293,13 @@ footer {
   font-family: 'Source Serif Pro', serif;
   color: #DB7093;
   background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+@media (max-width: 500px) {
+  footer {
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+  }
 }
 footer h2 {
   font-size: 3rem;
