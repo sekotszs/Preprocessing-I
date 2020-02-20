@@ -136,7 +136,21 @@ body {
 }
 body {
   margin: 5% 10%;
-  background-color: pink;
+  background-color: white;
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmNg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Source Serif Pro'), local('SourceSerifPro-Regular'), url(https://fonts.gstatic.com/s/sourceserifpro/v7/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-pQ.ttf) format('truetype');
 }
 /*HEADER*/
 header {
@@ -146,6 +160,7 @@ header {
   justify-content: flex-end;
   font-size: 1.7rem;
   background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  font-family: 'Source Serif Pro', serif;
 }
 header nav {
   margin-right: 62px;
@@ -153,10 +168,11 @@ header nav {
 header a {
   text-decoration: none;
   margin-left: 50px;
-  background-color: pink;
+  background-color: #FFB6C1;
+  border: #DCDCDC 5px dotted;
   padding: 10px;
   border-radius: 10px;
-  border: 5PX;
+  color: #DB7093;
 }
 /*SECTION TOP CONTENT*/
 .topcontent {
@@ -165,15 +181,16 @@ header a {
   justify-content: space-between;
   flex-direction: row-reverse;
   padding: 2.5% 5%;
+  font-family: 'Lobster', cursive;
+  color: #DB7093;
 }
 .topcontent .myname {
-  background-color: lightblue;
+  background-color: #FFB6C1;
+  border: #DCDCDC 15px dotted;
+  border-radius: 20px;
   width: 150%;
   margin: 10%;
   text-align: center;
-}
-.topcontent .picture {
-  border: 7px yellow solid;
 }
 .topcontent img {
   width: 400px;
@@ -186,44 +203,58 @@ header a {
 }
 /*SECTION ABOUT ME*/
 .aboutme {
-  background-color: lightblue;
+  background-color: #FFB6C1;
   justify-content: space-around;
   padding: 10px 100px;
 }
 .aboutme .info {
-  background-color: yellow;
+  background-color: #DCDCDC;
   padding: 1% 50px;
   text-align: center;
-  border: red 2px solid;
+  border: #DB7093 15px dotted;
   margin: 50px 50px;
+  color: #DB7093;
 }
 .aboutme h2 {
   font-size: 3rem;
+  font-family: 'Lobster', cursive;
 }
 .aboutme p {
-  font-size: 1.6rem;
-  border: fuchsia 5px solid;
+  font-size: 1.5rem;
+  border-top: #DB7093 5px solid;
   width: 500x;
   padding: 15px;
+  font-family: 'Source Serif Pro', serif;
+  padding-top: 15px;
 }
 /*FOOTER*/
 footer {
-  background-color: palevioletred;
+  background-color: #FFB6C1;
   justify-content: space-between;
   flex-direction: row;
   padding: 100px;
+  font-family: 'Source Serif Pro', serif;
+  color: #DB7093;
+  background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
 }
 footer h2 {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 25px;
+  font-family: 'Lobster', cursive;
+  background-color: #DCDCDC;
+  padding-top: 20px ;
 }
 footer nav {
   padding-top: 25px;
+  background-color: #DCDCDC;
+  padding-bottom: 20px;
 }
 footer a {
   font-size: 1.5rem;
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
+  color: #DB7093;
+  text-decoration: none;
 }
