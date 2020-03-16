@@ -173,11 +173,11 @@ header nav {
 header a {
   text-decoration: none;
   margin-left: 50px;
-  background-color: #FFB6C1;
+  background-color: #D3D3D3;
   border: #DCDCDC 5px dotted;
   padding: 10px;
   border-radius: 10px;
-  color: #DB7093;
+  color: #2F4F4F;
 }
 @media (max-width: 500px) {
   header a {
@@ -188,13 +188,13 @@ header a {
 }
 /*SECTION TOP CONTENT*/
 .topcontent {
-  background-image: url('https://images.unsplash.com/photo-1581985430116-d8fba25256b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-color: #D3D3D3;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   padding: 2.5% 5%;
   font-family: 'Lobster', cursive;
-  color: #DB7093;
+  color: #2F4F4F;
 }
 @media (max-width: 500px) {
   .topcontent {
@@ -203,8 +203,8 @@ header a {
   }
 }
 .topcontent .myname {
-  background-color: #FFB6C1;
-  border: #DCDCDC 15px dotted;
+  background-color: #D3D3D3;
+  border: #2F4F4F 15px dotted;
   border-radius: 20px;
   width: 150%;
   margin: 10%;
@@ -246,7 +246,7 @@ header a {
 }
 /*SECTION ABOUT ME*/
 .aboutme {
-  background-color: #FFB6C1;
+  background-color: #D3D3D3;
   justify-content: space-around;
   padding: 10px 100px;
 }
@@ -258,12 +258,12 @@ header a {
   }
 }
 .aboutme .info {
-  background-color: #DCDCDC;
+  background-color: #D3D3D3;
   padding: 1% 50px;
   text-align: center;
-  border: #DB7093 15px dotted;
+  border: #2F4F4F 15px dotted;
   margin: 50px 50px;
-  color: #DB7093;
+  color: #2F4F4F;
 }
 .aboutme h2 {
   font-size: 3rem;
@@ -271,7 +271,7 @@ header a {
 }
 .aboutme p {
   font-size: 1.5rem;
-  border-top: #DB7093 5px solid;
+  border-top: #2F4F4F 5px solid;
   width: 500x;
   padding: 15px;
   font-family: 'Source Serif Pro', serif;
@@ -291,7 +291,7 @@ footer {
   flex-direction: row;
   padding: 100px;
   font-family: 'Source Serif Pro', serif;
-  color: #DB7093;
+  color: #2F4F4F;
   background-image: url('https://images.unsplash.com/photo-1494271823928-a80211877d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
 }
 @media (max-width: 500px) {
@@ -319,6 +319,6 @@ footer a {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
-  color: #DB7093;
+  color: #2F4F4F;
   text-decoration: none;
 }
